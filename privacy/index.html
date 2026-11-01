@@ -28,7 +28,7 @@
   <div class="hero">
     <div class="wrap">
       <h1>Privacy</h1>
-      <p class="lede">What the demo apps at lifebalance.luppol.com, nanolink.luppol.com and familytree.luppol.com keep about you, for how long, and how to have it deleted. Last updated 4 October 2026.</p>
+      <p class="lede">What the apps at lifebalance.luppol.com, nanolink.luppol.com and familytree.luppol.com keep about you, for how long, and how to have it deleted. Last updated 1 November 2026.</p>
     </div>
   </div>
 
@@ -46,9 +46,11 @@
       <h2>When you sign in</h2>
       <div class="prose">
         <p><strong>Continue as guest</strong> uses one shared demo account. Nothing about you is collected beyond the sign-in record described below.</p>
-        <p><strong>Sign in with Google or GitHub</strong> creates a demo account on the sign-in server (auth.luppol.com) from what that provider sends: your name, your e-mail address, your user name there and an ID the provider gives you for this site. No password is stored, your provider's access tokens are not kept, and nothing else from your account is stored — no contacts, posts, photos or friends.</p>
-        <p>If you later sign in with a second provider that has the same e-mail address, you can add it to the same demo account after signing in once the way you did before; an account is never joined on the e-mail address alone.</p>
-        <p>The account is used for one thing only: to let you into the demos.</p>
+        <p><strong>Register</strong> creates your own account on the sign-in server (auth.luppol.com) from what you type: your e-mail address, first and last name, and a password, which is stored only as a salted hash. The account opens after you confirm your e-mail address with the link sent to it.</p>
+        <p><strong>Sign in with Google or GitHub</strong> creates the same kind of account from what that provider sends: your name, your e-mail address, your user name there and an ID the provider gives you for this site. Your provider's access tokens are not kept, and nothing else from your account is stored — no contacts, posts, photos or friends. With GitHub you confirm your e-mail address by a link first.</p>
+        <p>If you later sign in with a second provider that has the same e-mail address, you can add it to the same account after signing in once the way you did before; an account is never joined on the e-mail address alone.</p>
+        <p>If you add a <strong>passkey</strong>, the sign-in server keeps its public key and name; your fingerprint or face never leaves your device.</p>
+        <p>The account is used only to let you into the apps and to e-mail you about it (confirming your address, resetting your password). No newsletters.</p>
       </div>
     </div>
   </section>
@@ -57,11 +59,12 @@
     <div class="wrap">
       <h2>What is kept, and for how long</h2>
       <div class="prose">
-        <p><strong>Your demo account</strong> (name, e-mail address, your user name and ID at the provider, creation time): deleted automatically 30 days after it was created. If you come back later, a new one is created.</p>
-        <p><strong>What you create inside a demo</strong> (plans, short links, family trees, photos): wiped every night at 04:15 US Central time.</p>
+        <p><strong>Your account</strong> (e-mail address, name, password hash or your user name and ID at the provider, passkey public keys, creation time): kept until you ask for it to be deleted. Sign-ups whose e-mail address is never confirmed are deleted after 48 hours. Accounts nobody has used for a long time may be removed to free space.</p>
+        <p><strong>What you create with your own account</strong> (plans, short links, family trees, photos): kept with your account. <strong>What is created with the shared guest account</strong> is wiped every night at 04:15 US Central time.</p>
         <p><strong>Sign-in records</strong> (time, IP address, which account and which provider): kept 90 days to protect the service from password guessing and abuse.</p>
         <p><strong>Server logs</strong> (time, IP address, address requested): kept in size-capped logs that delete their oldest entries as new ones arrive. IP addresses that attack the server, for example by guessing passwords or scanning for weaknesses, are shared with the CrowdSec community blocklist.</p>
-        <p><strong>Encrypted backups</strong> of the sign-in server exist for disaster recovery only. If one is ever restored, the 30-day deletion above runs again the next night.</p>
+        <p><strong>E-mails</strong> (address confirmation, password reset) are delivered by Resend (resend.com), which receives your e-mail address and the message only to deliver it.</p>
+        <p><strong>Encrypted backups</strong> of the sign-in server and of the apps' databases are made every night, for disaster recovery only. If one is ever restored, every deletion you asked for is applied again.</p>
         <p><strong>Cookies</strong>: only the session cookies that keep you signed in. No tracking, no analytics, no advertising.</p>
       </div>
     </div>
@@ -71,7 +74,7 @@
     <div class="wrap">
       <h2>What is not done</h2>
       <div class="prose">
-        <p>Your data is not sold, shared, used for advertising or profiling, or sent to anyone except as described above. The server runs at OVHcloud in Hillsboro, Oregon, USA; the encrypted backups are stored at Backblaze B2 in the USA.</p>
+        <p>Your data is not sold, shared, used for advertising or profiling, or sent to anyone except as described above. The server runs at OVHcloud in Hillsboro, Oregon, USA; the encrypted backups are stored at Backblaze B2 in the USA; e-mails are delivered by Resend in the USA.</p>
       </div>
     </div>
   </section>
@@ -80,7 +83,7 @@
     <div class="wrap">
       <h2>Deleting your data</h2>
       <div class="prose">
-        <p>Your demo account is deleted on its own 30 days after you first signed in. To have it deleted sooner, e-mail <a href="mailto:albert.y.luppol@gmail.com">albert.y.luppol@gmail.com</a> from the address you signed in with, or name the provider you used; it is deleted within 7 days and you get a reply when it is done.</p>
+        <p>To have your account and everything you created in the apps deleted, e-mail <a href="mailto:albert.y.luppol@gmail.com">albert.y.luppol@gmail.com</a> from your account's address, or name the provider you used; it is deleted within 7 days and you get a reply when it is done.</p>
         <p>You can also remove this site's access at any time in your Google or GitHub account settings.</p>
       </div>
     </div>
@@ -90,7 +93,7 @@
     <div class="wrap">
       <h2>Terms of use</h2>
       <div class="prose">
-        <p>The demos are free, provided as they are for evaluation, with no promise of availability. Do not put anything important or personal into them: everything you create is wiped every night. Attacking the service or using it for anything unlawful ends your access.</p>
+        <p>The apps are free and provided as they are, with no promise of availability or that your data will be kept: keep your own copy of anything important. The guest account is shared and wiped every night, so put nothing personal into it. Attacking the service, creating accounts in bulk, or using it — short links included — for spam, phishing or anything unlawful ends your access and removes what you created.</p>
       </div>
     </div>
   </section>
