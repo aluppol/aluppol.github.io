@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="{{@lang}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{privacy.title}}</title>
+<meta name="description" content="{{privacy.description}}">
+<meta property="og:title" content="{{privacy.title}}">
+<meta property="og:description" content="{{privacy.description}}">
+<meta property="og:type" content="website">
+{{@alternates}}
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="{{@prefix}}/">{{site.brand}}</a>
+    <nav>
+      <a href="{{@prefix}}/projects/">{{site.nav.projects}}</a>
+      <a href="https://github.com/aluppol">{{site.nav.github}}</a>
+      <a href="https://www.linkedin.com/in/aluppol">{{site.nav.linkedin}}</a>
+    </nav>
+    {{@switcher}}
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <div class="wrap">
+      <h1>{{privacy.hero.title}}</h1>
+      <p class="lede">{{privacy.hero.lede}}</p>
+    </div>
+  </div>
+
+  <section id="who">
+    <div class="wrap">
+      <h2>{{privacy.who.heading}}</h2>
+      <div class="prose">
+        <p>{{privacy.who.p1}}</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="sign-in">
+    <div class="wrap">
+      <h2>{{privacy.sign_in.heading}}</h2>
+      <div class="prose">
+        <p>{{privacy.sign_in.p1}}</p>
+        <p>{{privacy.sign_in.p2}}</p>
+        <p>{{privacy.sign_in.p3}}</p>
+        <p>{{privacy.sign_in.p4}}</p>
+        <p>{{privacy.sign_in.p5}}</p>
+        <p>{{privacy.sign_in.p6}}</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="retention">
+    <div class="wrap">
+      <h2>{{privacy.retention.heading}}</h2>
+      <div class="prose">
+        <p>{{privacy.retention.p1}}</p>
+        <p>{{privacy.retention.p2}}</p>
+        <p>{{privacy.retention.p3}}</p>
+        <p>{{privacy.retention.p4}}</p>
+        <p>{{privacy.retention.p5}}</p>
+        <p>{{privacy.retention.p6}}</p>
+        <p>{{privacy.retention.p7}}</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="sharing">
+    <div class="wrap">
+      <h2>{{privacy.sharing.heading}}</h2>
+      <div class="prose">
+        <p>{{privacy.sharing.p1}}</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="delete">
+    <div class="wrap">
+      <h2>{{privacy.delete.heading}}</h2>
+      <div class="prose">
+        <p>{{privacy.delete.p1}}</p>
+        <p>{{privacy.delete.p2}}</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="terms">
+    <div class="wrap">
+      <h2>{{privacy.terms.heading}}</h2>
+      <div class="prose">
+        <p>{{privacy.terms.p1}}</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <span>{{site.copyright}}</span>
+  <nav>
+    <a href="{{@prefix}}/">{{site.nav.home}}</a>
+    <a href="https://github.com/aluppol">{{site.nav.github}}</a>
+    <a href="https://www.linkedin.com/in/aluppol">{{site.nav.linkedin}}</a>
+    <a href="{{@prefix}}/privacy/">{{site.nav.privacy}}</a>
+  </nav>
+</footer>
+
+</body>
+</html>

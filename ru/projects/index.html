@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Проекты — Albert Luppol</title>
+<meta name="description" content="Что создал Albert Luppol: сервисы, приложения и эксперименты, с исходным кодом и онлайн-демо там, где они есть.">
+<meta property="og:title" content="Проекты — Albert Luppol">
+<meta property="og:description" content="Что создал Albert Luppol: сервисы, приложения и эксперименты, с исходным кодом и онлайн-демо там, где они есть.">
+<meta property="og:type" content="website">
+<link rel="alternate" hreflang="en" href="https://albert.luppol.com/projects/">
+<link rel="alternate" hreflang="ru" href="https://albert.luppol.com/ru/projects/">
+<link rel="alternate" hreflang="sr" href="https://albert.luppol.com/sr/projects/">
+<link rel="alternate" hreflang="x-default" href="https://albert.luppol.com/projects/">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/ru/">Albert Luppol</a>
+    <nav>
+      <a href="/ru/projects/">Проекты</a>
+      <a href="https://github.com/aluppol">GitHub</a>
+      <a href="https://www.linkedin.com/in/aluppol">LinkedIn</a>
+    </nav>
+    <nav class="lang" aria-label="Язык">
+      <a href="/projects/" hreflang="en" lang="en" title="English"><svg class="flag" viewBox="0 0 39 26" width="24" height="16" aria-hidden="true" focusable="false"><path fill="#fff" d="M0 0h39v26H0z"/><path fill="#b22234" d="M0 0h39v2H0zm0 4h39v2H0zm0 4h39v2H0zm0 4h39v2H0zm0 4h39v2H0zm0 4h39v2H0zm0 4h39v2H0z"/><path fill="#3c3b6e" d="M0 0h19.76v14H0z"/><defs><path id="flag-us-s" fill="#fff" d="M0-.8l.47 1.447-1.231-.894h1.522l-1.231.894z"/><g id="flag-us-r6"><use href="#flag-us-s" x="1.647"/><use href="#flag-us-s" x="4.94"/><use href="#flag-us-s" x="8.233"/><use href="#flag-us-s" x="11.527"/><use href="#flag-us-s" x="14.82"/><use href="#flag-us-s" x="18.113"/></g><g id="flag-us-r5"><use href="#flag-us-s" x="3.293"/><use href="#flag-us-s" x="6.587"/><use href="#flag-us-s" x="9.88"/><use href="#flag-us-s" x="13.173"/><use href="#flag-us-s" x="16.467"/></g></defs><use href="#flag-us-r6" y="1.4"/><use href="#flag-us-r5" y="2.8"/><use href="#flag-us-r6" y="4.2"/><use href="#flag-us-r5" y="5.6"/><use href="#flag-us-r6" y="7"/><use href="#flag-us-r5" y="8.4"/><use href="#flag-us-r6" y="9.8"/><use href="#flag-us-r5" y="11.2"/><use href="#flag-us-r6" y="12.6"/></svg><span class="visually-hidden">English</span></a>
+      <a href="/ru/projects/" hreflang="ru" lang="ru" title="Русский" aria-current="true"><svg class="flag" viewBox="0 0 9 6" width="24" height="16" aria-hidden="true" focusable="false"><path fill="#fff" d="M0 0h9v2H0z"/><path fill="#0039a6" d="M0 2h9v2H0z"/><path fill="#d52b1e" d="M0 4h9v2H0z"/></svg><span class="visually-hidden">Русский</span></a>
+      <a href="/sr/projects/" hreflang="sr" lang="sr" title="Српски"><svg class="flag" viewBox="0 0 9 6" width="24" height="16" aria-hidden="true" focusable="false"><path fill="#c6363c" d="M0 0h9v2H0z"/><path fill="#0c4076" d="M0 2h9v2H0z"/><path fill="#fff" d="M0 4h9v2H0z"/></svg><span class="visually-hidden">Српски</span></a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <div class="wrap">
+      <h1>Проекты</h1>
+      <p class="lede">Что я сделал — с исходным кодом, а если проект можно просто открыть, а не запускать у себя, то и с работающей версией.</p>
+    </div>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <h2>Сервисы и платформы</h2>
+      <div class="grid">
+
+        <article class="card">
+          <h3><a href="https://github.com/aluppol/life_balance">Life Balance</a></h3>
+          <p>Планировщик, построенный на идее, что проекты должны исходить из долгосрочных ценностей, а не наоборот. Spring Boot поверх Postgres, Docker Compose для всего стека, тесты и покрытие при каждом push.</p>
+          <div class="meta"><span class="pill pill-live">Онлайн</span><span class="tech">Java 21 · Spring Boot · Postgres · Gradle</span></div>
+          <div class="card-links"><a href="https://lifebalance.luppol.com/?lang=ru">Демо</a> <a href="https://github.com/aluppol/life_balance">Исходный код</a></div>
+        </article>
+
+        <article class="card">
+          <h3><a href="https://github.com/aluppol/nanolink">Nanolink</a></h3>
+          <p>Сокращатель ссылок, разделённый на два сервиса — ровно по двум задачам, которые у него на самом деле есть: FastAPI-сервис отвечает за создание ссылок и управление ими, а Fastify-сервис только быстро перенаправляет. Между ними MongoDB, оба сервиса в контейнерах.</p>
+          <div class="meta"><span class="pill pill-live">Онлайн</span><span class="tech">FastAPI · Fastify · MongoDB · Docker</span></div>
+          <div class="card-links"><a href="https://nanolink.luppol.com/?lang=ru">Демо</a> <a href="https://github.com/aluppol/nanolink">Исходный код</a></div>
+        </article>
+
+        <article class="card">
+          <h3><a href="https://github.com/aluppol/family-tree">Family Tree</a></h3>
+          <p>Генеалогическое приложение, чтобы не запутаться в большой родне: React и Vite на фронтенде, за ними API на Django и Postgres.</p>
+          <div class="meta"><span class="pill pill-live">Онлайн</span><span class="tech">React · Vite · Django · Postgres</span></div>
+          <div class="card-links"><a href="https://familytree.luppol.com/?lang=ru">Демо</a> <a href="https://github.com/aluppol/family-tree">Исходный код</a></div>
+        </article>
+
+        <article class="card">
+          <h3><a href="https://github.com/aluppol/img_to_speech">Img to Speech</a></h3>
+          <p>Превращает отсканированные страницы в аудиокнигу: распознавание текста на изображениях, затем синтез речи по тексту. Python, модели работают локально, а не через API.</p>
+          <div class="meta"><span class="pill pill-code">Код</span><span class="tech">Python · Transformers · OCR · TTS</span></div>
+          <div class="card-links"><a href="https://github.com/aluppol/img_to_speech">Исходный код</a></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="apps">
+    <div class="wrap">
+      <h2>Приложения, которые можно открыть</h2>
+      <div class="grid">
+
+        <article class="card">
+          <h3><a href="/crazy-fingers/">Crazy Fingers</a></h3>
+          <p>Клавиатурный тренажёр для новой клавиатуры. Настоящий текст для набора, отслеживание позиции в реальном времени — и больше ничего лишнего.</p>
+          <div class="meta"><span class="pill pill-live">Онлайн</span><span class="tech">Angular · TypeScript</span></div>
+          <div class="card-links"><a href="/crazy-fingers/">Открыть приложение</a> <a href="https://github.com/aluppol/crazy-fingers">Исходный код</a></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="earlier">
+    <div class="wrap">
+      <h2>Ранние работы</h2>
+      <div class="grid">
+
+        <article class="card">
+          <h3><a href="/resume-v0/dist/">Первый сайт-резюме</a></h3>
+          <p>Сайт, который я сделал в конце курса по фронтенду в 2021 году: свёрстан и анимирован вручную. Оставлен как был — с него всё началось.</p>
+          <div class="meta"><span class="pill pill-live">Онлайн</span><span class="tech">HTML · SASS · Gulp</span></div>
+          <div class="card-links"><a href="/resume-v0/dist/">Открыть сайт</a> <a href="https://github.com/aluppol/resume-v0">Исходный код</a></div>
+        </article>
+
+        <article class="card">
+          <h3><a href="/beetroot/index/">Учебные работы по фронтенду</a></h3>
+          <p>Все упражнения курса фронтенда в Beetroot Academy с оглавлением по урокам: вёрстка, сетки, анимация, формы, AJAX и два экзамена.</p>
+          <div class="meta"><span class="pill pill-live">Онлайн</span><span class="tech">HTML · CSS · JavaScript</span></div>
+          <div class="card-links"><a href="/beetroot/index/">Открыть оглавление</a> <a href="https://github.com/aluppol/beetroot">Исходный код</a></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <span>© 2026 Albert Luppol</span>
+  <nav>
+    <a href="/ru/">Главная</a>
+    <a href="https://github.com/aluppol">GitHub</a>
+    <a href="https://www.linkedin.com/in/aluppol">LinkedIn</a>
+    <a href="/ru/privacy/">Конфиденциальность</a>
+  </nav>
+</footer>
+
+</body>
+</html>

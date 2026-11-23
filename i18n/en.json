@@ -1,0 +1,175 @@
+{
+  "language": {
+    "name": "English",
+    "switcher": "Language"
+  },
+  "site": {
+    "brand": "Albert Luppol",
+    "email": "albert.y.luppol@gmail.com",
+    "copyright": "© 2026 Albert Luppol",
+    "nav": {
+      "home": "Home",
+      "projects": "Projects",
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "privacy": "Privacy"
+    },
+    "project": {
+      "life_balance": "Life Balance",
+      "crazy_fingers": "Crazy Fingers",
+      "nanolink": "Nanolink",
+      "family_tree": "Family Tree",
+      "img_to_speech": "Img to Speech"
+    },
+    "pill": {
+      "live": "Live",
+      "code": "Code"
+    },
+    "link": {
+      "demo": "Live demo",
+      "source": "Source",
+      "open_app": "Open app",
+      "open_site": "Open site",
+      "open_index": "Open index"
+    }
+  },
+  "home": {
+    "title": "Albert Luppol — Autonomy Scientist & Software Engineer",
+    "description": "Autonomy Scientist and Software Engineer at Fusion Anesthesia Solutions. MSCS in Machine Learning at Georgia Tech. Python, PyTorch, FastAPI.",
+    "hero": {
+      "title": "Autonomy Scientist,\nSoftware Engineer.",
+      "lede": "I build the data platform at Fusion Anesthesia Solutions and study machine learning at Georgia Tech (MSCS). Event-driven intake, per-source parsers, rules that open and close their own work. Python · PyTorch · FastAPI.",
+      "see_projects": "See the projects",
+      "get_in_touch": "Get in touch"
+    },
+    "about": {
+      "heading": "What I do",
+      "p1": "My work is the platform that ingests billing data from fourteen provider organisations — one parser strategy per source so onboarding a client adds files instead of editing the ones that already work, and a rules engine on top that opens a task when a record needs a human and closes it when later data proves the problem is gone.",
+      "p2": "Underneath that was a migration: a chain of stored procedures became an event-driven flow, where each step reacts to a recorded fact rather than being called by the step before it. You buy a trace of what happened and failure isolation; you pay with transactions you no longer get for free.",
+      "p3": "Alongside it I am doing an MSCS at Georgia Tech in machine learning — mostly to know precisely which side of the line a problem sits on: the conditions you can write down, and the patterns nobody can."
+    },
+    "stack": {
+      "python": "Python",
+      "pytorch": "PyTorch",
+      "fastapi": "FastAPI",
+      "typescript": "TypeScript",
+      "java": "Java",
+      "django": "Django",
+      "spring_boot": "Spring Boot",
+      "react": "React",
+      "postgresql": "PostgreSQL",
+      "mongodb": "MongoDB",
+      "docker": "Docker"
+    },
+    "selected": {
+      "heading": "Selected work",
+      "life_balance": {
+        "text": "A planner that organises goals and initiatives around long-term values instead of a to-do list. Spring Boot service over Postgres, containerised, with tests and coverage running on every push.",
+        "tech": "Java 21 · Spring Boot · Postgres"
+      },
+      "crazy_fingers": {
+        "text": "A typing trainer for getting comfortable with a new keyboard — real text, live accuracy, no account and no ceremony. Runs entirely in the browser.",
+        "tech": "Angular · TypeScript"
+      },
+      "nanolink": {
+        "text": "A URL shortener split the way it would be split in production: a FastAPI service that owns writes, a Fastify service that does nothing but redirect fast, MongoDB between them.",
+        "tech": "FastAPI · Fastify · MongoDB"
+      }
+    },
+    "contact": {
+      "heading": "Contact",
+      "text": "Open to conversations about backend and platform work."
+    }
+  },
+  "projects": {
+    "title": "Projects — Albert Luppol",
+    "description": "Things Albert Luppol has built: services, apps and experiments, with source and live demos where they exist.",
+    "hero": {
+      "title": "Projects",
+      "lede": "Things I have built, with the source and — where the project is something you can open rather than run — a live version."
+    },
+    "services": {
+      "heading": "Services & platforms",
+      "life_balance": {
+        "text": "A planner built on the idea that projects should hang off long-term values, not the other way round. Spring Boot over Postgres, Docker Compose for the stack, tests and coverage on every push.",
+        "tech": "Java 21 · Spring Boot · Postgres · Gradle"
+      },
+      "nanolink": {
+        "text": "A URL shortener split into the two services the job actually has: a FastAPI service that owns creation and management, and a Fastify service that does nothing but redirect quickly. MongoDB in between, both containerised.",
+        "tech": "FastAPI · Fastify · MongoDB · Docker"
+      },
+      "family_tree": {
+        "text": "A genealogy application for keeping a large extended family straight — React and Vite on the front, a Django API and Postgres behind it.",
+        "tech": "React · Vite · Django · Postgres"
+      },
+      "img_to_speech": {
+        "text": "Turns scanned pages into an audiobook: text recognition over the images, then speech synthesis over the text. Python, with the model work done locally rather than through an API.",
+        "tech": "Python · Transformers · OCR · TTS"
+      }
+    },
+    "apps": {
+      "heading": "Apps you can open",
+      "crazy_fingers": {
+        "text": "A typing trainer for a new keyboard. Real text to type against, live tracking of where you are, and nothing else in the way.",
+        "tech": "Angular · TypeScript"
+      }
+    },
+    "earlier": {
+      "heading": "Earlier work",
+      "resume": {
+        "name": "First résumé site",
+        "text": "The site I built at the end of a front-end course in 2021, hand-written and hand-animated. Kept as it was — it is where this started.",
+        "tech": "HTML · SASS · Gulp"
+      },
+      "beetroot": {
+        "name": "Front-end coursework",
+        "text": "Every exercise from the Beetroot Academy front-end course, indexed lesson by lesson — layout, grid, animation, forms, AJAX, and two exams.",
+        "tech": "HTML · CSS · JavaScript"
+      }
+    }
+  },
+  "privacy": {
+    "title": "Privacy — Albert Luppol",
+    "description": "What the luppol.com demo apps keep about you when you sign in, for how long, and how to have it deleted.",
+    "hero": {
+      "title": "Privacy",
+      "lede": "What the apps at lifebalance.luppol.com, nanolink.luppol.com and familytree.luppol.com keep about you, for how long, and how to have it deleted. Last updated 1 November 2026."
+    },
+    "who": {
+      "heading": "Who runs this",
+      "p1": "Albert Luppol, a private person, runs these demos to show his work. Contact: [{{site.email}}](mailto:{{site.email}})."
+    },
+    "sign_in": {
+      "heading": "When you sign in",
+      "p1": "**Continue as guest** uses one shared demo account. Nothing about you is collected beyond the sign-in record described below.",
+      "p2": "**Register** creates your own account on the sign-in server (auth.luppol.com) from what you type: your e-mail address, first and last name, and a password, which is stored only as a salted hash. The account opens after you confirm your e-mail address with the link sent to it.",
+      "p3": "**Sign in with Google or GitHub** creates the same kind of account from what that provider sends: your name, your e-mail address, your user name there and an ID the provider gives you for this site. Your provider's access tokens are not kept, and nothing else from your account is stored — no contacts, posts, photos or friends. With GitHub you confirm your e-mail address by a link first.",
+      "p4": "If you later sign in with a second provider that has the same e-mail address, you can add it to the same account after signing in once the way you did before; an account is never joined on the e-mail address alone.",
+      "p5": "If you add a **passkey**, the sign-in server keeps its public key and name; your fingerprint or face never leaves your device.",
+      "p6": "The account is used only to let you into the apps and to e-mail you about it (confirming your address, resetting your password). No newsletters."
+    },
+    "retention": {
+      "heading": "What is kept, and for how long",
+      "p1": "**Your account** (e-mail address, name, password hash or your user name and ID at the provider, passkey public keys, creation time): kept until you ask for it to be deleted. Sign-ups whose e-mail address is never confirmed are deleted after 48 hours. Accounts nobody has used for a long time may be removed to free space.",
+      "p2": "**What you create with your own account** (plans, short links, family trees, photos): kept with your account. **What is created with the shared guest account** is wiped every night at 04:15 US Central time.",
+      "p3": "**Sign-in records** (time, IP address, which account and which provider): kept 90 days to protect the service from password guessing and abuse.",
+      "p4": "**Server logs** (time, IP address, address requested): kept in size-capped logs that delete their oldest entries as new ones arrive. IP addresses that attack the server, for example by guessing passwords or scanning for weaknesses, are shared with the CrowdSec community blocklist.",
+      "p5": "**E-mails** (address confirmation, password reset) are delivered by Resend (resend.com), which receives your e-mail address and the message only to deliver it.",
+      "p6": "**Encrypted backups** of the sign-in server and of the apps' databases are made every night, for disaster recovery only. If one is ever restored, every deletion you asked for is applied again.",
+      "p7": "**Cookies**: only the session cookies that keep you signed in. No tracking, no analytics, no advertising."
+    },
+    "sharing": {
+      "heading": "What is not done",
+      "p1": "Your data is not sold, shared, used for advertising or profiling, or sent to anyone except as described above. The server runs at OVHcloud in Hillsboro, Oregon, USA; the encrypted backups are stored at Backblaze B2 in the USA; e-mails are delivered by Resend in the USA."
+    },
+    "delete": {
+      "heading": "Deleting your data",
+      "p1": "To have your account and everything you created in the apps deleted, e-mail [{{site.email}}](mailto:{{site.email}}) from your account's address, or name the provider you used; it is deleted within 7 days and you get a reply when it is done.",
+      "p2": "You can also remove this site's access at any time in your Google or GitHub account settings."
+    },
+    "terms": {
+      "heading": "Terms of use",
+      "p1": "The apps are free and provided as they are, with no promise of availability or that your data will be kept: keep your own copy of anything important. The guest account is shared and wiped every night, so put nothing personal into it. Attacking the service, creating accounts in bulk, or using it — short links included — for spam, phishing or anything unlawful ends your access and removes what you created."
+    }
+  }
+}

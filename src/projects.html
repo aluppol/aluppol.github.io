@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="{{@lang}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{projects.title}}</title>
+<meta name="description" content="{{projects.description}}">
+<meta property="og:title" content="{{projects.title}}">
+<meta property="og:description" content="{{projects.description}}">
+<meta property="og:type" content="website">
+{{@alternates}}
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="{{@prefix}}/">{{site.brand}}</a>
+    <nav>
+      <a href="{{@prefix}}/projects/">{{site.nav.projects}}</a>
+      <a href="https://github.com/aluppol">{{site.nav.github}}</a>
+      <a href="https://www.linkedin.com/in/aluppol">{{site.nav.linkedin}}</a>
+    </nav>
+    {{@switcher}}
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <div class="wrap">
+      <h1>{{projects.hero.title}}</h1>
+      <p class="lede">{{projects.hero.lede}}</p>
+    </div>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <h2>{{projects.services.heading}}</h2>
+      <div class="grid">
+
+        <article class="card">
+          <h3><a href="https://github.com/aluppol/life_balance">{{site.project.life_balance}}</a></h3>
+          <p>{{projects.services.life_balance.text}}</p>
+          <div class="meta"><span class="pill pill-live">{{site.pill.live}}</span><span class="tech">{{projects.services.life_balance.tech}}</span></div>
+          <div class="card-links"><a href="https://lifebalance.luppol.com/{{@demo}}">{{site.link.demo}}</a> <a href="https://github.com/aluppol/life_balance">{{site.link.source}}</a></div>
+        </article>
+
+        <article class="card">
+          <h3><a href="https://github.com/aluppol/nanolink">{{site.project.nanolink}}</a></h3>
+          <p>{{projects.services.nanolink.text}}</p>
+          <div class="meta"><span class="pill pill-live">{{site.pill.live}}</span><span class="tech">{{projects.services.nanolink.tech}}</span></div>
+          <div class="card-links"><a href="https://nanolink.luppol.com/{{@demo}}">{{site.link.demo}}</a> <a href="https://github.com/aluppol/nanolink">{{site.link.source}}</a></div>
+        </article>
+
+        <article class="card">
+          <h3><a href="https://github.com/aluppol/family-tree">{{site.project.family_tree}}</a></h3>
+          <p>{{projects.services.family_tree.text}}</p>
+          <div class="meta"><span class="pill pill-live">{{site.pill.live}}</span><span class="tech">{{projects.services.family_tree.tech}}</span></div>
+          <div class="card-links"><a href="https://familytree.luppol.com/{{@demo}}">{{site.link.demo}}</a> <a href="https://github.com/aluppol/family-tree">{{site.link.source}}</a></div>
+        </article>
+
+        <article class="card">
+          <h3><a href="https://github.com/aluppol/img_to_speech">{{site.project.img_to_speech}}</a></h3>
+          <p>{{projects.services.img_to_speech.text}}</p>
+          <div class="meta"><span class="pill pill-code">{{site.pill.code}}</span><span class="tech">{{projects.services.img_to_speech.tech}}</span></div>
+          <div class="card-links"><a href="https://github.com/aluppol/img_to_speech">{{site.link.source}}</a></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="apps">
+    <div class="wrap">
+      <h2>{{projects.apps.heading}}</h2>
+      <div class="grid">
+
+        <article class="card">
+          <h3><a href="/crazy-fingers/">{{site.project.crazy_fingers}}</a></h3>
+          <p>{{projects.apps.crazy_fingers.text}}</p>
+          <div class="meta"><span class="pill pill-live">{{site.pill.live}}</span><span class="tech">{{projects.apps.crazy_fingers.tech}}</span></div>
+          <div class="card-links"><a href="/crazy-fingers/">{{site.link.open_app}}</a> <a href="https://github.com/aluppol/crazy-fingers">{{site.link.source}}</a></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="earlier">
+    <div class="wrap">
+      <h2>{{projects.earlier.heading}}</h2>
+      <div class="grid">
+
+        <article class="card">
+          <h3><a href="/resume-v0/dist/">{{projects.earlier.resume.name}}</a></h3>
+          <p>{{projects.earlier.resume.text}}</p>
+          <div class="meta"><span class="pill pill-live">{{site.pill.live}}</span><span class="tech">{{projects.earlier.resume.tech}}</span></div>
+          <div class="card-links"><a href="/resume-v0/dist/">{{site.link.open_site}}</a> <a href="https://github.com/aluppol/resume-v0">{{site.link.source}}</a></div>
+        </article>
+
+        <article class="card">
+          <h3><a href="/beetroot/index/">{{projects.earlier.beetroot.name}}</a></h3>
+          <p>{{projects.earlier.beetroot.text}}</p>
+          <div class="meta"><span class="pill pill-live">{{site.pill.live}}</span><span class="tech">{{projects.earlier.beetroot.tech}}</span></div>
+          <div class="card-links"><a href="/beetroot/index/">{{site.link.open_index}}</a> <a href="https://github.com/aluppol/beetroot">{{site.link.source}}</a></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <span>{{site.copyright}}</span>
+  <nav>
+    <a href="{{@prefix}}/">{{site.nav.home}}</a>
+    <a href="https://github.com/aluppol">{{site.nav.github}}</a>
+    <a href="https://www.linkedin.com/in/aluppol">{{site.nav.linkedin}}</a>
+    <a href="{{@prefix}}/privacy/">{{site.nav.privacy}}</a>
+  </nav>
+</footer>
+
+</body>
+</html>

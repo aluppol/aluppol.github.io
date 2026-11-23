@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="{{@lang}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{home.title}}</title>
+<meta name="description" content="{{home.description}}">
+<meta property="og:title" content="{{home.title}}">
+<meta property="og:description" content="{{home.description}}">
+<meta property="og:type" content="website">
+{{@alternates}}
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="{{@prefix}}/">{{site.brand}}</a>
+    <nav>
+      <a href="{{@prefix}}/projects/">{{site.nav.projects}}</a>
+      <a href="https://github.com/aluppol">{{site.nav.github}}</a>
+      <a href="https://www.linkedin.com/in/aluppol">{{site.nav.linkedin}}</a>
+    </nav>
+    {{@switcher}}
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <div class="wrap">
+      <h1>{{home.hero.title}}</h1>
+      <p class="lede">{{home.hero.lede}}</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="{{@prefix}}/projects/">{{home.hero.see_projects}}</a>
+        <a class="btn" href="mailto:{{site.email}}">{{home.hero.get_in_touch}}</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="wrap">
+      <h2>{{home.about.heading}}</h2>
+      <div class="prose">
+        <p>{{home.about.p1}}</p>
+        <p>{{home.about.p2}}</p>
+        <p>{{home.about.p3}}</p>
+      </div>
+      <div class="stack">
+        <span>{{home.stack.python}}</span><span>{{home.stack.pytorch}}</span><span>{{home.stack.fastapi}}</span><span>{{home.stack.typescript}}</span><span>{{home.stack.java}}</span><span>{{home.stack.django}}</span><span>{{home.stack.spring_boot}}</span><span>{{home.stack.react}}</span><span>{{home.stack.postgresql}}</span><span>{{home.stack.mongodb}}</span><span>{{home.stack.docker}}</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="selected">
+    <div class="wrap">
+      <h2>{{home.selected.heading}}</h2>
+      <div class="grid">
+
+        <article class="card">
+          <h3><a href="https://github.com/aluppol/life_balance">{{site.project.life_balance}}</a></h3>
+          <p>{{home.selected.life_balance.text}}</p>
+          <div class="meta"><span class="pill pill-live">{{site.pill.live}}</span><span class="tech">{{home.selected.life_balance.tech}}</span></div>
+          <div class="card-links"><a href="https://lifebalance.luppol.com/{{@demo}}">{{site.link.demo}}</a> <a href="https://github.com/aluppol/life_balance">{{site.link.source}}</a></div>
+        </article>
+
+        <article class="card">
+          <h3><a href="/crazy-fingers/">{{site.project.crazy_fingers}}</a></h3>
+          <p>{{home.selected.crazy_fingers.text}}</p>
+          <div class="meta"><span class="pill pill-live">{{site.pill.live}}</span><span class="tech">{{home.selected.crazy_fingers.tech}}</span></div>
+          <div class="card-links"><a href="/crazy-fingers/">{{site.link.open_app}}</a> <a href="https://github.com/aluppol/crazy-fingers">{{site.link.source}}</a></div>
+        </article>
+
+        <article class="card">
+          <h3><a href="https://github.com/aluppol/nanolink">{{site.project.nanolink}}</a></h3>
+          <p>{{home.selected.nanolink.text}}</p>
+          <div class="meta"><span class="pill pill-live">{{site.pill.live}}</span><span class="tech">{{home.selected.nanolink.tech}}</span></div>
+          <div class="card-links"><a href="https://nanolink.luppol.com/{{@demo}}">{{site.link.demo}}</a> <a href="https://github.com/aluppol/nanolink">{{site.link.source}}</a></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <h2>{{home.contact.heading}}</h2>
+      <div class="prose">
+        <p>{{home.contact.text}}</p>
+        <p><a href="mailto:{{site.email}}">{{site.email}}</a> · <a href="https://www.linkedin.com/in/aluppol">{{site.nav.linkedin}}</a> · <a href="https://github.com/aluppol">{{site.nav.github}}</a></p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <span>{{site.copyright}}</span>
+  <nav>
+    <a href="{{@prefix}}/projects/">{{site.nav.projects}}</a>
+    <a href="https://github.com/aluppol">{{site.nav.github}}</a>
+    <a href="https://www.linkedin.com/in/aluppol">{{site.nav.linkedin}}</a>
+    <a href="{{@prefix}}/privacy/">{{site.nav.privacy}}</a>
+  </nav>
+</footer>
+
+</body>
+</html>

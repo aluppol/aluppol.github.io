@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Albert Luppol — исследователь автономных систем и инженер-программист</title>
+<meta name="description" content="Исследователь автономных систем и инженер-программист в Fusion Anesthesia Solutions. Магистратура MSCS по машинному обучению в Georgia Tech. Python, PyTorch, FastAPI.">
+<meta property="og:title" content="Albert Luppol — исследователь автономных систем и инженер-программист">
+<meta property="og:description" content="Исследователь автономных систем и инженер-программист в Fusion Anesthesia Solutions. Магистратура MSCS по машинному обучению в Georgia Tech. Python, PyTorch, FastAPI.">
+<meta property="og:type" content="website">
+<link rel="alternate" hreflang="en" href="https://albert.luppol.com/">
+<link rel="alternate" hreflang="ru" href="https://albert.luppol.com/ru/">
+<link rel="alternate" hreflang="sr" href="https://albert.luppol.com/sr/">
+<link rel="alternate" hreflang="x-default" href="https://albert.luppol.com/">
+<link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/ru/">Albert Luppol</a>
+    <nav>
+      <a href="/ru/projects/">Проекты</a>
+      <a href="https://github.com/aluppol">GitHub</a>
+      <a href="https://www.linkedin.com/in/aluppol">LinkedIn</a>
+    </nav>
+    <nav class="lang" aria-label="Язык">
+      <a href="/" hreflang="en" lang="en" title="English"><svg class="flag" viewBox="0 0 39 26" width="24" height="16" aria-hidden="true" focusable="false"><path fill="#fff" d="M0 0h39v26H0z"/><path fill="#b22234" d="M0 0h39v2H0zm0 4h39v2H0zm0 4h39v2H0zm0 4h39v2H0zm0 4h39v2H0zm0 4h39v2H0zm0 4h39v2H0z"/><path fill="#3c3b6e" d="M0 0h19.76v14H0z"/><defs><path id="flag-us-s" fill="#fff" d="M0-.8l.47 1.447-1.231-.894h1.522l-1.231.894z"/><g id="flag-us-r6"><use href="#flag-us-s" x="1.647"/><use href="#flag-us-s" x="4.94"/><use href="#flag-us-s" x="8.233"/><use href="#flag-us-s" x="11.527"/><use href="#flag-us-s" x="14.82"/><use href="#flag-us-s" x="18.113"/></g><g id="flag-us-r5"><use href="#flag-us-s" x="3.293"/><use href="#flag-us-s" x="6.587"/><use href="#flag-us-s" x="9.88"/><use href="#flag-us-s" x="13.173"/><use href="#flag-us-s" x="16.467"/></g></defs><use href="#flag-us-r6" y="1.4"/><use href="#flag-us-r5" y="2.8"/><use href="#flag-us-r6" y="4.2"/><use href="#flag-us-r5" y="5.6"/><use href="#flag-us-r6" y="7"/><use href="#flag-us-r5" y="8.4"/><use href="#flag-us-r6" y="9.8"/><use href="#flag-us-r5" y="11.2"/><use href="#flag-us-r6" y="12.6"/></svg><span class="visually-hidden">English</span></a>
+      <a href="/ru/" hreflang="ru" lang="ru" title="Русский" aria-current="true"><svg class="flag" viewBox="0 0 9 6" width="24" height="16" aria-hidden="true" focusable="false"><path fill="#fff" d="M0 0h9v2H0z"/><path fill="#0039a6" d="M0 2h9v2H0z"/><path fill="#d52b1e" d="M0 4h9v2H0z"/></svg><span class="visually-hidden">Русский</span></a>
+      <a href="/sr/" hreflang="sr" lang="sr" title="Српски"><svg class="flag" viewBox="0 0 9 6" width="24" height="16" aria-hidden="true" focusable="false"><path fill="#c6363c" d="M0 0h9v2H0z"/><path fill="#0c4076" d="M0 2h9v2H0z"/><path fill="#fff" d="M0 4h9v2H0z"/></svg><span class="visually-hidden">Српски</span></a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <div class="wrap">
+      <h1>Исследователь автономных систем,<br>инженер-программист.</h1>
+      <p class="lede">Я разрабатываю платформу данных в Fusion Anesthesia Solutions и изучаю машинное обучение в Georgia Tech (MSCS). Событийно-ориентированный приём данных, отдельный парсер для каждого источника, правила, которые сами открывают и закрывают свои задачи. Python · PyTorch · FastAPI.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="/ru/projects/">Посмотреть проекты</a>
+        <a class="btn" href="mailto:albert.y.luppol@gmail.com">Написать мне</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="wrap">
+      <h2>Чем я занимаюсь</h2>
+      <div class="prose">
+        <p>Моя работа — платформа, которая принимает биллинговые данные от четырнадцати медицинских организаций. Для каждого источника своя стратегия парсинга, поэтому подключение нового клиента добавляет файлы, а не правит уже работающие. Поверх неё — движок правил: он открывает задачу, когда запись требует внимания человека, и закрывает её, когда более поздние данные показывают, что проблемы больше нет.</p>
+        <p>В основе лежала миграция: цепочка хранимых процедур превратилась в событийно-ориентированный поток, где каждый шаг реагирует на зафиксированный факт, а не вызывается предыдущим шагом. Выигрыш — след всего, что произошло, и изоляция сбоев; цена — транзакции, которые больше не достаются бесплатно.</p>
+        <p>Параллельно я учусь в магистратуре Georgia Tech (MSCS) по машинному обучению — в основном чтобы точно знать, по какую сторону черты лежит задача: условия, которые можно записать, или закономерности, которые не запишет никто.</p>
+      </div>
+      <div class="stack">
+        <span>Python</span><span>PyTorch</span><span>FastAPI</span><span>TypeScript</span><span>Java</span><span>Django</span><span>Spring Boot</span><span>React</span><span>PostgreSQL</span><span>MongoDB</span><span>Docker</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="selected">
+    <div class="wrap">
+      <h2>Избранные работы</h2>
+      <div class="grid">
+
+        <article class="card">
+          <h3><a href="https://github.com/aluppol/life_balance">Life Balance</a></h3>
+          <p>Планировщик, который выстраивает цели и инициативы вокруг долгосрочных ценностей, а не вокруг списка дел. Сервис на Spring Boot поверх Postgres, упакован в контейнеры; тесты и покрытие прогоняются при каждом push.</p>
+          <div class="meta"><span class="pill pill-live">Онлайн</span><span class="tech">Java 21 · Spring Boot · Postgres</span></div>
+          <div class="card-links"><a href="https://lifebalance.luppol.com/?lang=ru">Демо</a> <a href="https://github.com/aluppol/life_balance">Исходный код</a></div>
+        </article>
+
+        <article class="card">
+          <h3><a href="/crazy-fingers/">Crazy Fingers</a></h3>
+          <p>Клавиатурный тренажёр, чтобы привыкнуть к новой клавиатуре: настоящий текст, точность в реальном времени, без аккаунта и без церемоний. Работает целиком в браузере.</p>
+          <div class="meta"><span class="pill pill-live">Онлайн</span><span class="tech">Angular · TypeScript</span></div>
+          <div class="card-links"><a href="/crazy-fingers/">Открыть приложение</a> <a href="https://github.com/aluppol/crazy-fingers">Исходный код</a></div>
+        </article>
+
+        <article class="card">
+          <h3><a href="https://github.com/aluppol/nanolink">Nanolink</a></h3>
+          <p>Сокращатель ссылок, разделённый так, как это сделали бы в продакшене: FastAPI-сервис отвечает за запись, Fastify-сервис только быстро перенаправляет, между ними — MongoDB.</p>
+          <div class="meta"><span class="pill pill-live">Онлайн</span><span class="tech">FastAPI · Fastify · MongoDB</span></div>
+          <div class="card-links"><a href="https://nanolink.luppol.com/?lang=ru">Демо</a> <a href="https://github.com/aluppol/nanolink">Исходный код</a></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <h2>Контакты</h2>
+      <div class="prose">
+        <p>Открыт к разговорам о бэкенд- и платформенной разработке.</p>
+        <p><a href="mailto:albert.y.luppol@gmail.com">albert.y.luppol@gmail.com</a> · <a href="https://www.linkedin.com/in/aluppol">LinkedIn</a> · <a href="https://github.com/aluppol">GitHub</a></p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <span>© 2026 Albert Luppol</span>
+  <nav>
+    <a href="/ru/projects/">Проекты</a>
+    <a href="https://github.com/aluppol">GitHub</a>
+    <a href="https://www.linkedin.com/in/aluppol">LinkedIn</a>
+    <a href="/ru/privacy/">Конфиденциальность</a>
+  </nav>
+</footer>
+
+</body>
+</html>
